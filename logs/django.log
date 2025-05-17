@@ -1,0 +1,4 @@
+[2025-05-15 16:42:24,074] INFO autoreload Watching for file changes with StatReloader
+[2025-05-15 16:42:43,540] INFO basehttp "GET /index/ HTTP/1.1" 200 1138
+[2025-05-15 16:45:56,087] INFO basehttp "GET /index/ HTTP/1.1" 200 1138
+[2025-05-15 16:47:00,933] INFO autoreload /Users/hamrozkosimov/Desktop/davtj_web/davtj_web/settings.py changed, reloading.

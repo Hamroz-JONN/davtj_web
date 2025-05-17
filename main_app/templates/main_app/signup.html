@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAV.TJ Registration</title>
+</head>
+<body>
+    {% include 'main_app/utilities/menu.html' %} 
+    
+    <h1>Fill the Registration Form</h1>
+
+    <form action="{% url 'signup' %}" method="POST">
+        {% csrf_token %}
+
+        {{ form.non_field_errors }}
+        {{ ext_form.non_field_errors }}
+        
+        {% include 'main_app/utilities/forms.html' with form=form%}
+        {% include 'main_app/utilities/forms.html' with form=ext_form%}
+
+        <button>Signup!</button>
+    </form>
+
+    {% include 'main_app/utilities/messages.html' %}
+     
+</body>
+</html>

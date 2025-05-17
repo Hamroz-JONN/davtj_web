@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAV.TJ Signin</title>
+</head>
+<body>
+    {% include 'main_app/utilities/menu.html' %} 
+    
+    <h1>Sign in please</h1>
+
+    <form action="{% url 'signin' %}" method="POST">
+        {% csrf_token %}
+        <ul>
+            {{form.as_ul}}
+        </ul>
+        
+        <button>Sign In!</button>
+    </form>
+
+    {% include 'main_app/utilities/messages.html' %}
+</body>
+</html>
