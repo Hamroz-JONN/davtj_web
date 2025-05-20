@@ -12,3 +12,7 @@ venv/
 
 # Django-specific
 db.sqlite3
+
+# OS files
+.DS_Store
+
